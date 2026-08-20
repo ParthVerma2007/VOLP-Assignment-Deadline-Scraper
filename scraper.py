@@ -337,6 +337,11 @@ async def main():
 
                 status = res.get("status")
                 raw_text = res.get("text", "")
+                # print("\n========== SUBJECTIVE API DEBUG ==========")
+                # print("HTTP STATUS:", status)
+                # print("RAW RESPONSE:")
+                # print(raw_text[:5000])
+                # print("==========================================\n")
                 
                 if status == 200:
                     try:
